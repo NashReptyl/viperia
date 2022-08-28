@@ -15,8 +15,8 @@ function NavBar (props){
                     </Link>
                 </div>
                 <div className="dropdown show">
-                    <a className="btn btn-secondary bg-dark border-0 shadow-none" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img
+                    <a className="hand btn btn-secondary bg-dark border-0 shadow-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img alt="pp"
                         src={"https://cdn.discordapp.com/avatars/"+props.user.discordId+"/"+props.user.avatar+".png"}
                         className="rounded-circle profile" height="40"/>
                     {props.user.username}
