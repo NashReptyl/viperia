@@ -10,15 +10,8 @@ function GuessWho(){
     const[roomCode, setRoomCode] = useState('')
 
     let navigate = useNavigate();
-    const[loading, setLoading] = useState(true);
+    const[loading, setLoading] = useState(false);
 
-    useEffect ( () => {
-      getUserDetails()
-      .then(({}) => {
-          setLoading(false);
-      }).catch((err) => 
-      navigate('/home'));
-    },[])
 
     return !loading && (
       <div className='page-guess'>
